@@ -16,10 +16,11 @@
 	[colorPanel setTitle:@"Spot Color"];
 	[colorPanel setShowsAlpha:YES];
 	[colorPanel setDelegate:self];
-	[colorPanel setFloatingPanel:NO];
+	[colorPanel setFloatingPanel:[[NSUserDefaults standardUserDefaults] boolForKey:@"floatingPanel"]];
 	[colorPanel setHidesOnDeactivate:NO];
 	[colorPanel setShowsAlpha:YES];
 	[colorPanel makeKeyAndOrderFront:nil];
+	[colorPanel bind:@"floatingPanel" toObject:[NSUserDefaultsController sharedUserDefaultsController] withKeyPath:@"values.floatingPanel" options:nil];
 }
 
 // Make sure app quits after panel is closed
