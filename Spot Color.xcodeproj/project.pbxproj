@@ -245,6 +245,7 @@
 				GCC_PREFIX_HEADER = src/Spot_Color_Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "Spot Color";
 			};
 			name = Debug;
@@ -259,6 +260,7 @@
 				GCC_PREFIX_HEADER = src/Spot_Color_Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				PRODUCT_NAME = "Spot Color";
 			};
 			name = Release;
